@@ -9,13 +9,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="style.css"></script>
 
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+    <style>
+
+      .manrope {
+        font-family: "Manrope", sans-serif;}
+    </style>
+
+
     <script>
         tailwind.config = {
           theme: {
             extend: {
               colors: {
                 clifford: '#da373d',
-                'button-colour':'#ABEF5F',
+
               },
             },
           },
@@ -23,10 +35,10 @@
       </script>
 
 </head>
-<body>
+<body class="manrope">
 
     <header>
-        <nav class="mx-auto md:container text-black py-10 border-2 bg-cyan-500">
+        <nav class="mx-auto md:container text-black py-10 ">
             <div class="navbar bg-neutral text-neutral-content flex justify-between lg:justify-evenly bg-gradient-to-t from-[#FFFFFF] to-[#FFFFFF] ">
                 <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-white border-none text-3xl font-extrabold "><i class="-rotate-45 fa-solid fa-arrow-right bg-[#ABEF5F]  text-xl rounded-full px-1" ></i> Rinterio</button>
                 
@@ -76,9 +88,75 @@
             
         </nav>
 
+        <!-- banner section -->
+        <div class="">
+          <div class="hero bg-base-250 min-h-screen ">
 
+            <div class="hero-content text-center flex flex-col">
 
+              <div class="max-w-md">
+                <img class="lg:" src="assets/banner.png" alt="">
+
+              </div>
+              <div class="px-4 md:px-8">
+                <h1 class="font-extrabold text-4xl">A barn house of this design has a striking appearance</h1>
+                <p class="py-6 sm:font-medium text-sm">
+                  The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+                <button class="text-[#1C1C1C] w-11/12 md:w-auto bg-[#d1f3aa] text-xl font-extrabold p-3 px-4 rounded-3xl"> View Details <i class="-rotate-45 fa-solid fa-arrow-right bg-[#ABEF5F] rounded-full p-1 text-[#ffffff] "></i></button>
+
+              </div>
+            </div>
+          </div>
+        </div>
     </header>
+
+    <main class="bg-slate-100 mx-auto md:container text-black py-10 border-2 border-[red]">
+      <!-- about us -->
+      <div class="hero-content text-center flex flex-col">
+
+
+        <div class="px-4 md:px-8">
+          <button class="text-[#1C1C1C]  bg-[#FFFFFF] text-lg font-bold p-2 px-4 rounded-3xl"> <i class=" fa-solid fa-arrow-right rounded-full p-1 text-[#494949] "></i> About Us  </button>
+          <h1 class="font-bold text-2xl pt-5">We design thoughtful, liveable spaces</h1>
+          <p class="py-6 sm:font-medium text-sm">
+            The barn house captivates with its blend of rustic charm and 
+            modern sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+
+        <div class="card bg-base-100 shadow-xl flex flex-row justify-between py-4">
+          <figure class="basis-1/5">
+            <img class="p-2 "
+              src="assets/commercial.png" />
+          </figure>
+          <div class="basis-4/5	text-left px-2 ">
+            <h2 class="font-extrabold text-[#494949] ">Commercial</h2>
+            <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+        </div>
+
+        <div class="card bg-base-100 shadow-xl flex flex-row justify-between py-4">
+          <figure class="basis-1/5">
+            <img class="p-2 "
+              src="assets/residential.png" />
+          </figure>
+          <div class="basis-4/5	text-left px-2 ">
+            <h2 class="font-extrabold text-[#494949] ">Commercial</h2>
+            <p class="text-[#737373]">The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+        </div>
+
+        <div class="max-w-md">
+          <img class="" src="assets/Rectangle.png" alt="">
+
+        </div>
+
+      </div>
+
+
+    </main>
+
     
 </body>
 </html>
