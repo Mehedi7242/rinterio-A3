@@ -1,0 +1,83 @@
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <!-- daisy-Ui cdm -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script src="style.css"></script>
+    
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    clifford: '#da373d',
+                    'bike-primary': '#E76F51',
+                  }
+                }
+              }
+            }
+          </script>
+
+</head>
+<body>
+
+    <header>
+        <nav class="mx-auto md:container text-black">
+
+            <div class="navbar bg-neutral text-neutral-content flex justify-between lg:justify-evenly bg-gradient-to-t from-[#FFFFFF] to-[#FFFFFF] ">
+                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-white border-none text-3xl font-extrabold "><i class="-rotate-45 fa-solid fa-arrow-right bg-[#ABEF5F]  text-xl rounded-full px-1" ></i> Rinterio</button>
+                
+                <div class="md:hidden lg:hidden dropdown dropdown-bottom dropdown-end ">
+                    <div tabindex="0" role="button" class="btn m-1"><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h7" />
+                      </svg></div>
+                        <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="hidden md:block">
+                        <button class="text-[#737373] px-3">Home</button>
+                        <button class="text-[#737373] px-3">Shop</button>
+                        <button class="text-[#737373] px-3">News</button>
+                        <button class="text-[#737373] px-3 ">Contact</button>
+                        <button class="text-[#737373] px-3">Login</button>
+
+                    </div>
+
+
+                    <div class="hidden md:flex gap-4">
+                      <div class="flex gap-5">
+                        <i class="border-[#E9E9E9] border-2 fa-solid fa-magnifying-glass bg-[#FFFFFF] rounded-full p-1 text-[#E9E9E9] "></i>
+                        <i class="fa-solid fa-cart-shopping bg-[#FFFFFF] rounded-full p-1 text-[#E9E9E9] border-2 fa-solid  "></i>
+                      </div>
+                      
+                      <button class="text-[#1C1C1C] bg-[#ABEF5F] text-xl font-extrabold p-3 px-4 rounded-3xl"> Book Consult <i class="-rotate-45 fa-solid fa-arrow-right bg-[#1C1C1C] rounded-full p-1 text-[#ffffff] "></i></button>
+
+                    </div>
+
+            </div>
+            
+
+        </nav>
+    </header>
+    
+</body>
+</html>
